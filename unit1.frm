@@ -1,43 +1,100 @@
 object Form1: TForm1
   Left = 315
-  Height = 155
+  Height = 356
   Top = 156
-  Width = 194
+  Width = 180
   Caption = 'Form1'
-  ClientHeight = 155
-  ClientWidth = 194
+  ClientHeight = 356
+  ClientWidth = 180
   Color = clBackground
   LCLVersion = '7.2'
   object Hora: TplLEDIndicator
-    Left = 8
-    Height = 128
+    Left = 16
+    Height = 300
     Top = 8
-    Width = 30
-    Position = 12
+    Width = 46
+    Position = 75
     Background = clBlack
     Foreground = clLime
   end
   object Minuto: TplLEDIndicator
-    Left = 56
-    Height = 128
+    Left = 72
+    Height = 300
     Top = 8
-    Width = 30
-    Position = 12
+    Width = 46
+    Position = 50
     Background = clBlack
     Foreground = clLime
   end
   object Segundo: TplLEDIndicator
-    Left = 104
-    Height = 128
+    Left = 128
+    Height = 300
     Top = 8
-    Width = 30
-    Position = 98
+    Width = 46
+    Position = 50
     Background = clBlack
     Foreground = clLime
   end
+  object plLCDLine1: TplLCDLine
+    Left = 16
+    Height = 32
+    Top = 312
+    Width = 154
+    CellSize = 2
+    CellSpace = 1
+    FrameSize = 2
+    FrameColor = clBlack
+    BoardColor = clBlack
+    CellColorOn = clLime
+    CellColorOff = clBlack
+    Text = '12:30:30'
+    FrameStyle = None
+  end
+  object plColorPanel1: TplColorPanel
+    Left = 8
+    Height = 100
+    Top = 208
+    Width = 9
+    FrameColorHighLight = 8623776
+    FrameColorShadow = 8623776
+    FrameWidth = 1
+    Color = clBlue
+    ParentColor = False
+    TabOrder = 0
+    UseDockManager = True
+    OnClick = plColorPanel1Click
+  end
+  object plColorPanel2: TplColorPanel
+    Left = 8
+    Height = 129
+    Top = 80
+    Width = 9
+    FrameColorHighLight = 8623776
+    FrameColorShadow = 8623776
+    FrameWidth = 1
+    Color = clRed
+    ParentColor = False
+    TabOrder = 1
+    UseDockManager = True
+    OnClick = plColorPanel1Click
+  end
+  object plColorPanel3: TplColorPanel
+    Left = 8
+    Height = 72
+    Top = 8
+    Width = 9
+    FrameColorHighLight = 8623776
+    FrameColorShadow = 8623776
+    FrameWidth = 1
+    Color = clBlue
+    ParentColor = False
+    TabOrder = 2
+    UseDockManager = True
+    OnClick = plColorPanel1Click
+  end
   object Timer1: TTimer
     OnTimer = Timer1Timer
-    Left = 144
-    Top = 104
+    Left = 104
+    Top = 96
   end
 end
