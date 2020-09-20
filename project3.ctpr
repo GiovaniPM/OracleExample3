@@ -26,6 +26,9 @@
     </RunParams>
     <RequiredPackages>
       <Item>
+        <PackageName Value="pl_Barcodes"/>
+      </Item>
+      <Item>
         <PackageName Value="pl_JVCL"/>
       </Item>
       <Item>

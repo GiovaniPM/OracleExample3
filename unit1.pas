@@ -21,7 +21,6 @@ type
     plLCDLine1: TplLCDLine;
     Segundo: TplLEDIndicator;
     Timer1: TTimer;
-    procedure plColorPanel1Click(Sender: TObject);
     procedure Timer1Timer(Sender: TObject);
   private
 
@@ -60,10 +59,4 @@ begin
   plLCDLine1.Text  := L0(Hour)+ ':' + L0(Min) + ':' + L0(Sec);
 end;
 
-procedure TForm1.plColorPanel1Click(Sender: TObject);
-begin
-
-end;
-
 end.
-

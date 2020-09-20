@@ -2,11 +2,11 @@ object Form1: TForm1
   Left = 315
   Height = 356
   Top = 156
-  Width = 180
+  Width = 202
   Caption = 'Form1'
   ClientHeight = 356
-  ClientWidth = 180
-  Color = clBackground
+  ClientWidth = 202
+  Color = clBlack
   LCLVersion = '7.2'
   object Hora: TplLEDIndicator
     Left = 16
@@ -47,14 +47,15 @@ object Form1: TForm1
     BoardColor = clBlack
     CellColorOn = clLime
     CellColorOff = clBlack
-    Text = '12:30:30'
+    Text = '18:30:30'
     FrameStyle = None
   end
   object plColorPanel1: TplColorPanel
     Left = 8
     Height = 100
     Top = 208
-    Width = 9
+    Width = 12
+    DrawFrame = False
     FrameColorHighLight = 8623776
     FrameColorShadow = 8623776
     FrameWidth = 1
@@ -62,13 +63,13 @@ object Form1: TForm1
     ParentColor = False
     TabOrder = 0
     UseDockManager = True
-    OnClick = plColorPanel1Click
   end
   object plColorPanel2: TplColorPanel
     Left = 8
     Height = 129
     Top = 80
-    Width = 9
+    Width = 12
+    DrawFrame = False
     FrameColorHighLight = 8623776
     FrameColorShadow = 8623776
     FrameWidth = 1
@@ -76,13 +77,13 @@ object Form1: TForm1
     ParentColor = False
     TabOrder = 1
     UseDockManager = True
-    OnClick = plColorPanel1Click
   end
   object plColorPanel3: TplColorPanel
     Left = 8
     Height = 72
     Top = 8
-    Width = 9
+    Width = 12
+    DrawFrame = False
     FrameColorHighLight = 8623776
     FrameColorShadow = 8623776
     FrameWidth = 1
@@ -90,11 +91,10 @@ object Form1: TForm1
     ParentColor = False
     TabOrder = 2
     UseDockManager = True
-    OnClick = plColorPanel1Click
   end
   object Timer1: TTimer
     OnTimer = Timer1Timer
-    Left = 104
-    Top = 96
+    Left = 168
+    Top = 312
   end
 end
